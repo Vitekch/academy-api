@@ -8,6 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # The dependencies are installed in the container
+RUN npm install -g npm@10.5.0
 RUN npm install
 
 # The rest of the code is copied into the container
